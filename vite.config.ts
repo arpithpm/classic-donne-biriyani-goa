@@ -15,6 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Uncomment and set your repo name for GitHub Pages deployment
-  // base: '/your-repo-name/',
+  base: '/goan-biryani-spot/',
 }));
