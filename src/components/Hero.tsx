@@ -85,13 +85,18 @@ const Hero = () => {
 
           {/* Quick Info */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-primary-foreground">
-            <div className="flex items-start gap-3 bg-primary-foreground/10 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20">
+            <a
+              href="https://maps.app.goo.gl/Bew47FuCXNWeYANp6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-3 bg-primary-foreground/10 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20 hover:bg-primary-foreground/20 transition-all cursor-pointer"
+            >
               <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium">Location</p>
                 <p className="text-sm text-primary-foreground/80">Lavinia Street, Calangute</p>
               </div>
-            </div>
+            </a>
             
             <div className="flex items-start gap-3 bg-primary-foreground/10 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20">
               <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
@@ -101,13 +106,16 @@ const Hero = () => {
               </div>
             </div>
             
-            <div className="flex items-start gap-3 bg-primary-foreground/10 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20">
+            <a
+              href="tel:+918177909828"
+              className="flex items-start gap-3 bg-primary-foreground/10 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20 hover:bg-primary-foreground/20 transition-all cursor-pointer"
+            >
               <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium">Call Us</p>
                 <p className="text-sm text-primary-foreground/80">081779 09828</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
