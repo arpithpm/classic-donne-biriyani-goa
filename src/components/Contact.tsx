@@ -30,7 +30,7 @@ const Contact = () => {
                     Goa 403516, India
                   </p>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Classic+Donne+Biryani+Lavinia+Street+Calangute+Goa"
+                    href="https://maps.app.goo.gl/Bew47FuCXNWeYANp6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1 transition-colors"
@@ -90,7 +90,7 @@ const Contact = () => {
           <div className="lg:sticky lg:top-24 h-[500px]">
             <Card className="h-full overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.5!2d73.75!3d15.54!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDMyJzI2LjQiTiA3M8KwNDUnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.5!2d73.7561!3d15.5436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc1c06aaae971%3A0xecf454a7ea3b11b1!2sClassic%20Donne%20Biriyani!5e0!3m2!1sen!2sin!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -115,7 +115,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Classic+Donne+Biryani+Calangute+Goa"
+              href="https://maps.app.goo.gl/Bew47FuCXNWeYANp6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors shadow-lg"
