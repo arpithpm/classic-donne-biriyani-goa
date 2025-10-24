@@ -1,9 +1,48 @@
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLanguage } from "@/contexts/LanguageContext";
+import chickenBiryani from "@/assets/menu/chicken-biryani.jpg";
+import chickenKurma from "@/assets/menu/chicken-kurma.jpg";
+import chickenFry from "@/assets/menu/chicken-fry.jpg";
+import chickenDrumstick from "@/assets/menu/chicken-drumstick.jpg";
+import chickenKabab from "@/assets/menu/chicken-kabab.jpg";
+import muttonBiryani from "@/assets/menu/mutton-biryani.jpg";
+import muttonKurma from "@/assets/menu/mutton-kurma.jpg";
+import muttonFry from "@/assets/menu/mutton-fry.jpg";
+import muttonPepper from "@/assets/menu/mutton-pepper.jpg";
+import eggMasala from "@/assets/menu/egg-masala.jpg";
+import eggBhurji from "@/assets/menu/egg-bhurji.jpg";
+import omelette from "@/assets/menu/omelette.jpg";
+import boiledEgg from "@/assets/menu/boiled-egg.jpg";
+import biryaniRice from "@/assets/menu/biryani-rice.jpg";
+import chapati from "@/assets/menu/chapati.jpg";
+import whiteRice from "@/assets/menu/white-rice.jpg";
 
 const Menu = () => {
   const { t } = useLanguage();
+  
+  const menuImages: Record<string, string> = {
+    [t('menu.chickenBiryani')]: chickenBiryani,
+    [t('menu.chickenKurma')]: chickenKurma,
+    [t('menu.chickenFry')]: chickenFry,
+    [t('menu.chickenDrumstick')]: chickenDrumstick,
+    [t('menu.chickenKabab')]: chickenKabab,
+    [t('menu.muttonBiryani')]: muttonBiryani,
+    [t('menu.muttonKurma')]: muttonKurma,
+    [t('menu.muttonFry')]: muttonFry,
+    [t('menu.muttonPepper')]: muttonPepper,
+    [t('menu.eggMasala')]: eggMasala,
+    [t('menu.eggBhurji')]: eggBhurji,
+    [t('menu.omelette')]: omelette,
+    [t('menu.boiledEgg')]: boiledEgg,
+    [t('menu.biryaniRice')]: biryaniRice,
+    [t('menu.chapati')]: chapati,
+    [t('menu.whiteRice')]: whiteRice,
+    [t('menu.chickenPepper')]: chickenFry,
+    [t('menu.chickenChilly')]: chickenFry,
+    [t('menu.muttonPepperDry')]: muttonPepper,
+  };
+  
   const menuCategories = [
     {
       id: "chicken",
@@ -101,21 +140,33 @@ const Menu = () => {
                   {category.items.map((item, index) => (
                     <Card 
                       key={index} 
-                      className="p-6 hover-lift bg-card"
+                      className="overflow-hidden hover-lift bg-card group"
                     >
-                      <div className="flex justify-between items-start mb-2">
-                        <h3 className="text-lg font-semibold text-card-foreground">
-                          {item.name}
-                        </h3>
-                        <span className="text-lg font-bold text-primary ml-4 flex-shrink-0">
-                          {item.price || category.price}
-                        </span>
-                      </div>
-                      {item.description && (
-                        <p className="text-sm text-muted-foreground">
-                          {item.description}
-                        </p>
+                      {menuImages[item.name] && (
+                        <div className="relative h-48 w-full overflow-hidden">
+                          <img 
+                            src={menuImages[item.name]} 
+                            alt={item.name}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                        </div>
                       )}
+                      <div className="p-6">
+                        <div className="flex justify-between items-start mb-2">
+                          <h3 className="text-lg font-semibold text-card-foreground">
+                            {item.name}
+                          </h3>
+                          <span className="text-lg font-bold text-primary ml-4 flex-shrink-0">
+                            {item.price || category.price}
+                          </span>
+                        </div>
+                        {item.description && (
+                          <p className="text-sm text-muted-foreground">
+                            {item.description}
+                          </p>
+                        )}
+                      </div>
                     </Card>
                   ))}
                 </div>
