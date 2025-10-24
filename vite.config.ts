@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/classic-donne-biriyani-goa/',
+  base: mode === 'production' ? '/classic-donne-biriyani-goa/' : '/',
 }));
