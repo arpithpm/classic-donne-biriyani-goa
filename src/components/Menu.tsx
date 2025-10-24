@@ -77,17 +77,19 @@ const Menu = () => {
         {/* Detailed Menu */}
         <div className="max-w-6xl mx-auto">
           <Tabs defaultValue="chicken" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8 bg-card">
-              {menuCategories.map((category) => (
-                <TabsTrigger 
-                  key={category.id} 
-                  value={category.id}
-                  className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
-                >
-                  {category.name}
-                </TabsTrigger>
-              ))}
-            </TabsList>
+            <div className="mb-8 overflow-x-auto scrollbar-hide -mx-4 px-4">
+              <TabsList className="inline-flex w-auto min-w-full md:grid md:w-full md:grid-cols-5 bg-card p-1 gap-1">
+                {menuCategories.map((category) => (
+                  <TabsTrigger 
+                    key={category.id} 
+                    value={category.id}
+                    className="whitespace-nowrap px-6 py-2.5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-md transition-all"
+                  >
+                    {category.name}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </div>
 
             {menuCategories.map((category) => (
               <TabsContent key={category.id} value={category.id} className="animate-fade-in">
