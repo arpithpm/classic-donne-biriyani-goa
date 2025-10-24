@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import menuCard from "@/assets/menu-card.png";
 
 const Menu = () => {
   const menuCategories = [
@@ -72,17 +71,6 @@ const Menu = () => {
             Explore our selection of authentic South Indian dishes, 
             from aromatic biryanis to traditional accompaniments
           </p>
-        </div>
-
-        {/* Menu Card Image */}
-        <div className="mb-16 max-w-4xl mx-auto">
-          <Card className="overflow-hidden border-2 border-primary/20 shadow-lg">
-            <img 
-              src={menuCard} 
-              alt="Classic Donne Biryani Menu Card" 
-              className="w-full h-auto"
-            />
-          </Card>
         </div>
 
         {/* Detailed Menu */}
