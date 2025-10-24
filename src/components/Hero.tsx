@@ -1,8 +1,11 @@
 import { MapPin, Phone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroBiryani from "@/assets/hero-biryani.jpg";
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -26,21 +29,20 @@ const Hero = () => {
         <div className="max-w-3xl animate-fade-in">
           <div className="mb-6 inline-block">
             <span className="px-4 py-2 bg-primary/20 backdrop-blur-sm text-primary-foreground rounded-full text-sm font-medium border border-primary/30">
-              Authentic South Indian Cuisine
+              {t('hero.tagline')}
             </span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Classic Donne Biryani
+            {t('hero.title')}
           </h1>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 font-light">
-            Where Traditional Flavors Meet Contemporary Comfort
+            {t('hero.subtitle')}
           </p>
           
           <p className="text-lg text-primary-foreground/80 mb-10 max-w-2xl">
-            Experience the authentic taste of Hyderabadi biryani and South Indian delicacies 
-            in the heart of Calangute, Goa. Perfect for families, tourists, and food lovers.
+            {t('hero.description')}
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">
@@ -49,7 +51,7 @@ const Hero = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 shadow-lg"
               onClick={() => scrollToSection('menu')}
             >
-              View Menu
+              {t('hero.viewMenu')}
             </Button>
             <Button 
               size="lg" 

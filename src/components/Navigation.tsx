@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +23,11 @@ const Navigation = () => {
   };
 
   const navLinks = [
-    { label: "About", id: "about" },
-    { label: "Menu", id: "menu" },
-    { label: "Gallery", id: "gallery" },
-    { label: "Reviews", id: "testimonials" },
-    { label: "Contact", id: "contact" },
+    { label: t('nav.about'), id: "about" },
+    { label: t('nav.menu'), id: "menu" },
+    { label: t('nav.gallery'), id: "gallery" },
+    { label: t('nav.reviews'), id: "testimonials" },
+    { label: t('nav.contact'), id: "contact" },
   ];
 
   return (
@@ -45,7 +48,7 @@ const Navigation = () => {
                 isScrolled ? "text-foreground" : "text-primary-foreground"
               }`}
             >
-              Classic Donne Biryani
+              {t('hero.title')}
             </button>
 
             {/* Desktop Navigation */}
@@ -61,23 +64,27 @@ const Navigation = () => {
                   {link.label}
                 </button>
               ))}
+              <LanguageSwitcher />
               <Button
                 onClick={() => scrollToSection("contact")}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                Visit Us
+                {t('nav.visitUs')}
               </Button>
             </div>
 
             {/* Mobile Menu Button */}
-            <button
-              className={`md:hidden ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
-              }`}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            <div className="flex items-center gap-2 md:hidden">
+              <LanguageSwitcher />
+              <button
+                className={`${
+                  isScrolled ? "text-foreground" : "text-primary-foreground"
+                }`}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -100,7 +107,7 @@ const Navigation = () => {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground mt-4"
             >
-              Visit Us
+              {t('nav.visitUs')}
             </Button>
           </div>
         </div>
