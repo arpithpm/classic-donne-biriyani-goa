@@ -61,7 +61,8 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-background">Location</p>
-                  <p>Calangute, Goa, India</p>
+                  <p>Lavinia Street, Calangute</p>
+                  <p>Goa 403516, India</p>
                 </div>
               </div>
               <div className="flex items-start gap-2">

@@ -130,8 +130,11 @@ const Menu = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground mb-2">
             All biryanis served with white raita and green chutney
+          </p>
+          <p className="text-sm text-muted-foreground">
+            Price range: ₹200-400 per person
           </p>
         </div>
       </div>

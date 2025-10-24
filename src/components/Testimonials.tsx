@@ -72,8 +72,8 @@ const Testimonials = () => {
         <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 rounded-full">
             <Star className="w-5 h-5 fill-primary text-primary" />
-            <span className="font-bold text-lg text-foreground">5.0</span>
-            <span className="text-muted-foreground">Average Rating on Google</span>
+            <span className="font-bold text-lg text-foreground">4.9</span>
+            <span className="text-muted-foreground">out of 5 • 409 Google Reviews</span>
           </div>
         </div>
       </div>

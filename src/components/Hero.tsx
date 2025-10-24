@@ -67,7 +67,7 @@ const Hero = () => {
               <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium">Location</p>
-                <p className="text-sm text-primary-foreground/80">Calangute, Goa</p>
+                <p className="text-sm text-primary-foreground/80">Lavinia Street, Calangute</p>
               </div>
             </div>
             
@@ -82,8 +82,8 @@ const Hero = () => {
             <div className="flex items-start gap-3 bg-primary-foreground/10 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20">
               <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="font-medium">Service</p>
-                <p className="text-sm text-primary-foreground/80">Dine-in & Takeaway</p>
+                <p className="font-medium">Call Us</p>
+                <p className="text-sm text-primary-foreground/80">081779 09828</p>
               </div>
             </div>
           </div>

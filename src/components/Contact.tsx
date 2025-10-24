@@ -26,10 +26,11 @@ const Contact = () => {
                   <h3 className="text-xl font-semibold mb-2 text-card-foreground">Location</h3>
                   <p className="text-muted-foreground mb-3">
                     Classic Donne Biryani<br />
-                    Calangute, Goa, India
+                    Lavinia Street, Calangute<br />
+                    Goa 403516, India
                   </p>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Classic+Donne+Biryani+Calangute+Goa"
+                    href="https://www.google.com/maps/search/?api=1&query=Classic+Donne+Biryani+Lavinia+Street+Calangute+Goa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1 transition-colors"
@@ -69,9 +70,17 @@ const Contact = () => {
                   <p className="text-muted-foreground mb-2">
                     For reservations and inquiries:
                   </p>
-                  <p className="font-medium text-card-foreground">
-                    Visit us at our location in Calangute
-                  </p>
+                  <a 
+                    href="tel:+918177909828"
+                    className="text-lg font-semibold text-card-foreground hover:text-primary transition-colors"
+                  >
+                    081779 09828
+                  </a>
+                  <div className="mt-3 pt-3 border-t border-border/50">
+                    <p className="text-sm text-muted-foreground">
+                      📍 Dine-in • Kerbside Pickup • No-Contact Delivery
+                    </p>
+                  </div>
                 </div>
               </div>
             </Card>

@@ -35,6 +35,8 @@ const About = () => {
             At Classic Donne Biryani, we bring you the authentic flavors of South India 
             right here in Goa. Our restaurant combines traditional recipes with modern comfort, 
             creating a dining experience that celebrates heritage while embracing contemporary elegance.
+            With a 4.9-star rating from over 400+ happy customers, we're proud to be one of Calangute's 
+            favorite dining destinations.
           </p>
         </div>
 
