@@ -68,8 +68,8 @@ const Footer = () => {
                 <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-background">Hours</p>
-                  <p>Open Daily</p>
-                  <p className="text-sm">Dine-in & Takeaway</p>
+                  <p>8:00 AM - 11:00 PM</p>
+                  <p className="text-sm">Open All Week</p>
                 </div>
               </div>
             </div>

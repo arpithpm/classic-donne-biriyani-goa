@@ -75,7 +75,7 @@ const Hero = () => {
               <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium">Hours</p>
-                <p className="text-sm text-primary-foreground/80">Open Daily</p>
+                <p className="text-sm text-primary-foreground/80">8 AM - 11 PM Daily</p>
               </div>
             </div>
             

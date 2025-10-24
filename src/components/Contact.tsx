@@ -50,13 +50,10 @@ const Contact = () => {
                   <div className="space-y-2 text-muted-foreground">
                     <div>
                       <p className="font-medium text-card-foreground">Monday - Sunday</p>
-                      <p className="text-sm">Open Daily</p>
+                      <p className="text-lg font-semibold text-card-foreground">8:00 AM - 11:00 PM</p>
+                      <p className="text-sm mt-1">Open All Week</p>
                     </div>
-                    <div className="pt-2 border-t border-border/50">
-                      <p className="text-sm"><span className="font-medium text-card-foreground">Lunch:</span> 12:00 PM - 3:30 PM</p>
-                      <p className="text-sm"><span className="font-medium text-card-foreground">Dinner:</span> 7:00 PM - 11:00 PM</p>
-                    </div>
-                    <p className="text-sm pt-1">Dine-in & Takeaway Available</p>
+                    <p className="text-sm pt-2 border-t border-border/50 mt-2">Dine-in & Takeaway Available</p>
                   </div>
                 </div>
               </div>
