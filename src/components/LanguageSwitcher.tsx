@@ -8,13 +8,23 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const LanguageSwitcher = () => {
+interface LanguageSwitcherProps {
+  isScrolled?: boolean;
+}
+
+const LanguageSwitcher = ({ isScrolled = true }: LanguageSwitcherProps) => {
   const { language, setLanguage } = useLanguage();
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="relative">
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          className={`relative ${
+            isScrolled ? "text-foreground hover:text-primary" : "text-primary-foreground hover:text-primary-foreground/80"
+          }`}
+        >
           <Languages className="h-5 w-5" />
           <span className="sr-only">Switch language</span>
         </Button>

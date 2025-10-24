@@ -64,7 +64,7 @@ const Navigation = () => {
                   {link.label}
                 </button>
               ))}
-              <LanguageSwitcher />
+              <LanguageSwitcher isScrolled={isScrolled} />
               <Button
                 onClick={() => scrollToSection("contact")}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
@@ -75,7 +75,7 @@ const Navigation = () => {
 
             {/* Mobile Menu Button */}
             <div className="flex items-center gap-2 md:hidden">
-              <LanguageSwitcher />
+              <LanguageSwitcher isScrolled={isScrolled} />
               <button
                 className={`${
                   isScrolled ? "text-foreground" : "text-primary-foreground"
