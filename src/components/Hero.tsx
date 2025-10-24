@@ -88,7 +88,7 @@ const Hero = () => {
           {/* Quick Info */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-primary-foreground">
             <a
-              href="https://maps.app.goo.gl/Bew47FuCXNWeYANp6"
+              href="https://maps.app.goo.gl/9fxjWZLBAqKCo8Jp6"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-start gap-3 bg-primary-foreground/10 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20 hover:bg-primary-foreground/20 transition-all cursor-pointer"
