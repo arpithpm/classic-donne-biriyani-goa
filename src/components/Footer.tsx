@@ -6,8 +6,11 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-foreground text-background py-12">
-      <div className="container px-4">
+    <footer className="bg-foreground text-background py-12 relative overflow-hidden">
+      {/* Karnataka inspired dot pattern overlay */}
+      <div className="absolute inset-0 dots-pattern-dual opacity-5 pointer-events-none" />
+      
+      <div className="container px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>

@@ -22,6 +22,8 @@ const Hero = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/70 to-foreground/50" />
+        {/* Karnataka flag inspired dot pattern overlay */}
+        <div className="absolute inset-0 dots-pattern-dual opacity-20" />
       </div>
 
       {/* Content */}

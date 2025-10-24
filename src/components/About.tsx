@@ -28,8 +28,12 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
-      <div className="container px-4">
+    <section id="about" className="py-20 bg-background relative overflow-hidden">
+      {/* Karnataka inspired dot decoration */}
+      <div className="absolute top-0 right-0 w-1/3 h-full dots-pattern-red opacity-5 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-1/3 h-full dots-pattern-yellow opacity-5 pointer-events-none" />
+      
+      <div className="container px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('about.title')}
@@ -59,8 +63,10 @@ const About = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border border-primary/10">
-          <div className="max-w-3xl mx-auto text-center">
+        <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border border-primary/10 relative overflow-hidden">
+          {/* Decorative dot pattern */}
+          <div className="absolute inset-0 dots-pattern-dual opacity-10 pointer-events-none" />
+          <div className="max-w-3xl mx-auto text-center relative z-10">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
               {t('about.story.title')}
             </h3>
