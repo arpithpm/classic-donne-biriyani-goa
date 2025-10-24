@@ -32,7 +32,7 @@ const Contact = () => {
                     {t('contact.address3')}
                   </p>
                   <a
-                    href="https://maps.app.goo.gl/Bew47FuCXNWeYANp6"
+                    href="https://www.google.com/maps/place/Classic+Donne+Biriyani/@15.5435241,73.7635672,17z/data=!4m6!3m5!1s0x3bbfc1006efd9971:0xecf454a7ea3b11b1!8m2!3d15.5435241!4d73.7635672!16s%2Fg%2F11lmn3j5zf?entry=tts&g_ep=EgoyMDI1MTAyMC4wIPu8ASoASAFQAw%3D%3D&skid=a91871ba-338e-41a0-9eca-799a87ed8fc4"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1 transition-colors"
@@ -164,7 +164,7 @@ const Contact = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="https://maps.app.goo.gl/Bew47FuCXNWeYANp6"
+                href="https://www.google.com/maps/place/Classic+Donne+Biriyani/@15.5435241,73.7635672,17z/data=!4m6!3m5!1s0x3bbfc1006efd9971:0xecf454a7ea3b11b1!8m2!3d15.5435241!4d73.7635672!16s%2Fg%2F11lmn3j5zf?entry=tts&g_ep=EgoyMDI1MTAyMC4wIPu8ASoASAFQAw%3D%3D&skid=a91871ba-338e-41a0-9eca-799a87ed8fc4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors shadow-lg"
