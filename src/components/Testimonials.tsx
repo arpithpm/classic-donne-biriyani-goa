@@ -1,7 +1,9 @@
 import { Star } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Testimonials = () => {
+  const { t } = useLanguage();
   const reviews = [
     {
       name: "Sahil Korgaokar",
@@ -40,10 +42,10 @@ const Testimonials = () => {
       <div className="container px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            What Our Customers Say
+            {t('testimonials.title')}
           </h2>
           <p className="text-lg text-muted-foreground">
-            Don't just take our word for it - hear from our satisfied customers
+            {t('testimonials.subtitle')}
           </p>
         </div>
 
@@ -73,7 +75,7 @@ const Testimonials = () => {
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 rounded-full">
             <Star className="w-5 h-5 fill-primary text-primary" />
             <span className="font-bold text-lg text-foreground">4.9</span>
-            <span className="text-muted-foreground">out of 5 • 409 Google Reviews</span>
+            <span className="text-muted-foreground">{t('testimonials.rating')}</span>
           </div>
         </div>
       </div>

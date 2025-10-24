@@ -1,26 +1,29 @@
 import { Award, Users, Heart, Utensils } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+  
   const features = [
     {
       icon: Award,
-      title: "Authentic Recipes",
-      description: "Traditional Hyderabadi and South Indian preparation methods passed down through generations"
+      title: t('about.authentic.title'),
+      description: t('about.authentic.desc')
     },
     {
       icon: Users,
-      title: "Family Friendly",
-      description: "Generous family feast packs and comfortable dining atmosphere perfect for gatherings"
+      title: t('about.family.title'),
+      description: t('about.family.desc')
     },
     {
       icon: Heart,
-      title: "Quality Ingredients",
-      description: "Fresh, premium ingredients carefully selected to ensure authentic taste in every dish"
+      title: t('about.quality.title'),
+      description: t('about.quality.desc')
     },
     {
       icon: Utensils,
-      title: "Modern Comfort",
-      description: "Contemporary dining experience with elegant ambiance at affordable prices"
+      title: t('about.modern.title'),
+      description: t('about.modern.desc')
     }
   ];
 
@@ -29,14 +32,10 @@ const About = () => {
       <div className="container px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Taste the Tradition
+            {t('about.title')}
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            At Classic Donne Biryani, we bring you the authentic flavors of South India 
-            right here in Goa. Our restaurant combines traditional recipes with modern comfort, 
-            creating a dining experience that celebrates heritage while embracing contemporary elegance.
-            With a 4.9-star rating from over 400+ happy customers, we're proud to be one of Calangute's 
-            favorite dining destinations.
+            {t('about.description')}
           </p>
         </div>
 
@@ -63,18 +62,13 @@ const About = () => {
         <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border border-primary/10">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-              Our Story
+              {t('about.story.title')}
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              We specialize in bringing the rich culinary heritage of South India to Goa's vibrant food scene. 
-              Our signature donne biryani, served in traditional style, has become a favorite among locals 
-              and tourists alike. Every dish is prepared with care, using time-honored techniques and the 
-              finest ingredients to deliver an authentic taste experience.
+              {t('about.story.p1')}
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Whether you're craving aromatic biryani, crispy dosas, or flavorful curries, our menu offers 
-              something for everyone. We pride ourselves on generous portions, family-friendly pricing, and 
-              a welcoming atmosphere that makes every meal memorable.
+              {t('about.story.p2')}
             </p>
           </div>
         </div>

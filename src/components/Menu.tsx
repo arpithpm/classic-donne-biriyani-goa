@@ -1,61 +1,63 @@
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Menu = () => {
+  const { t } = useLanguage();
   const menuCategories = [
     {
       id: "chicken",
-      name: "Chicken Specialties",
+      name: t('menu.chicken'),
       price: "₹180",
       items: [
-        { name: "Chicken Biryani", description: "Our signature aromatic biryani with tender chicken" },
-        { name: "Chicken Kurma", description: "Rich, creamy curry with authentic spices" },
-        { name: "Chicken Fry", description: "Crispy, perfectly spiced preparation" },
-        { name: "Chicken Drumstick", description: "Tender, marinated drumsticks" },
-        { name: "Chicken Kabab", description: "Grilled to perfection with traditional spices" },
+        { name: t('menu.chickenBiryani'), description: t('menu.chickenBiryani.desc') },
+        { name: t('menu.chickenKurma'), description: t('menu.chickenKurma.desc') },
+        { name: t('menu.chickenFry'), description: t('menu.chickenFry.desc') },
+        { name: t('menu.chickenDrumstick'), description: t('menu.chickenDrumstick.desc') },
+        { name: t('menu.chickenKabab'), description: t('menu.chickenKabab.desc') },
       ]
     },
     {
       id: "mutton",
-      name: "Mutton Delicacies",
+      name: t('menu.mutton'),
       price: "₹300",
       items: [
-        { name: "Mutton Biryani", description: "Premium biryani with succulent mutton" },
-        { name: "Mutton Kurma", description: "Traditional curry with aromatic spices" },
-        { name: "Mutton Fry", description: "Spiced and tender mutton preparation" },
-        { name: "Mutton Pepper", description: "Bold, peppery flavor profile" },
+        { name: t('menu.muttonBiryani'), description: t('menu.muttonBiryani.desc') },
+        { name: t('menu.muttonKurma'), description: t('menu.muttonKurma.desc') },
+        { name: t('menu.muttonFry'), description: t('menu.muttonFry.desc') },
+        { name: t('menu.muttonPepper'), description: t('menu.muttonPepper.desc') },
       ]
     },
     {
       id: "egg",
-      name: "Egg Varieties",
+      name: t('menu.egg'),
       items: [
-        { name: "Egg Masala", price: "₹130", description: "Rich, spiced curry" },
-        { name: "Egg Bhurji", price: "₹80", description: "Scrambled Indian style" },
-        { name: "Omelette Egg", price: "₹70", description: "Simple, fresh preparation" },
-        { name: "Boiled Egg (2 pcs)", price: "₹45", description: "Healthy option" },
+        { name: t('menu.eggMasala'), price: "₹130", description: t('menu.eggMasala.desc') },
+        { name: t('menu.eggBhurji'), price: "₹80", description: t('menu.eggBhurji.desc') },
+        { name: t('menu.omelette'), price: "₹70", description: t('menu.omelette.desc') },
+        { name: t('menu.boiledEgg'), price: "₹45", description: t('menu.boiledEgg.desc') },
       ]
     },
     {
       id: "family",
-      name: "Family Feast Packs (1 KG)",
+      name: t('menu.family'),
       items: [
-        { name: "Chicken Pepper", price: "₹849" },
-        { name: "Chicken Kurma", price: "₹849" },
-        { name: "Chicken Chilly", price: "₹849" },
-        { name: "Chicken Kabab", price: "₹849" },
-        { name: "Chicken Drumstick", price: "₹849" },
-        { name: "Mutton Pepper Dry", price: "₹1499" },
-        { name: "Mutton Kurma", price: "₹1499" },
+        { name: t('menu.chickenPepper'), price: "₹849" },
+        { name: t('menu.chickenKurma'), price: "₹849" },
+        { name: t('menu.chickenChilly'), price: "₹849" },
+        { name: t('menu.chickenKabab'), price: "₹849" },
+        { name: t('menu.chickenDrumstick'), price: "₹849" },
+        { name: t('menu.muttonPepperDry'), price: "₹1499" },
+        { name: t('menu.muttonKurma'), price: "₹1499" },
       ]
     },
     {
       id: "sides",
-      name: "Add-Ons",
+      name: t('menu.sides'),
       items: [
-        { name: "Biryani Rice", price: "₹90", description: "Fragrant basmati rice" },
-        { name: "Chapati (2 pcs)", price: "₹50", description: "Fresh, soft bread" },
-        { name: "White Rice", price: "₹50", description: "Steamed perfection" },
+        { name: t('menu.biryaniRice'), price: "₹90", description: t('menu.biryaniRice.desc') },
+        { name: t('menu.chapati'), price: "₹50", description: t('menu.chapati.desc') },
+        { name: t('menu.whiteRice'), price: "₹50", description: t('menu.whiteRice.desc') },
       ]
     },
   ];
@@ -65,11 +67,10 @@ const Menu = () => {
       <div className="container px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our Menu
+            {t('menu.title')}
           </h2>
           <p className="text-lg text-muted-foreground">
-            Explore our selection of authentic South Indian dishes, 
-            from aromatic biryanis to traditional accompaniments
+            {t('menu.subtitle')}
           </p>
         </div>
 
@@ -119,10 +120,10 @@ const Menu = () => {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground mb-2">
-            All biryanis served with white raita and green chutney
+            {t('menu.note')}
           </p>
           <p className="text-sm text-muted-foreground">
-            Price range: ₹200-400 per person
+            {t('menu.priceRange')}
           </p>
         </div>
       </div>

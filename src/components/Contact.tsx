@@ -1,16 +1,18 @@
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Visit Us
+            {t('contact.title')}
           </h2>
           <p className="text-lg text-muted-foreground">
-            Come experience the authentic flavors of South India in Calangute, Goa
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -23,11 +25,11 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2 text-card-foreground">Location</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-card-foreground">{t('contact.location')}</h3>
                   <p className="text-muted-foreground mb-3">
-                    Classic Donne Biryani<br />
-                    Lavinia Street, Calangute<br />
-                    Goa 403516, India
+                    {t('contact.address1')}<br />
+                    {t('contact.address2')}<br />
+                    {t('contact.address3')}
                   </p>
                   <a
                     href="https://maps.app.goo.gl/Bew47FuCXNWeYANp6"
@@ -35,7 +37,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1 transition-colors"
                   >
-                    Get Directions →
+                    {t('contact.getDirections')}
                   </a>
                 </div>
               </div>
@@ -47,14 +49,14 @@ const Contact = () => {
                   <Clock className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2 text-card-foreground">Hours</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-card-foreground">{t('contact.hours')}</h3>
                   <div className="space-y-2 text-muted-foreground">
                     <div>
-                      <p className="font-medium text-card-foreground">Monday - Sunday</p>
-                      <p className="text-lg font-semibold text-card-foreground">8:00 AM - 11:00 PM</p>
-                      <p className="text-sm mt-1">Open All Week</p>
+                      <p className="font-medium text-card-foreground">{t('contact.hoursDay')}</p>
+                      <p className="text-lg font-semibold text-card-foreground">{t('contact.hoursTime')}</p>
+                      <p className="text-sm mt-1">{t('contact.hoursOpen')}</p>
                     </div>
-                    <p className="text-sm pt-2 border-t border-border/50 mt-2">Dine-in & Takeaway Available</p>
+                    <p className="text-sm pt-2 border-t border-border/50 mt-2">{t('contact.hoursService')}</p>
                   </div>
                 </div>
               </div>
@@ -66,9 +68,9 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2 text-card-foreground">Contact</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-card-foreground">{t('contact.contact')}</h3>
                   <p className="text-muted-foreground mb-2">
-                    For reservations and inquiries:
+                    {t('contact.contactText')}
                   </p>
                   <a 
                     href="tel:+918177909828"
@@ -78,7 +80,7 @@ const Contact = () => {
                   </a>
                   <div className="mt-3 pt-3 border-t border-border/50">
                     <p className="text-sm text-muted-foreground mb-2">
-                      📍 Dine-in • Kerbside Pickup • No-Contact Delivery
+                      {t('contact.services')}
                     </p>
                     <div className="flex flex-wrap gap-2 mt-3">
                       <a
@@ -156,11 +158,10 @@ const Contact = () => {
           {/* Visit Us Section */}
           <div className="text-center bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border border-primary/10 max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-              Ready to Experience Authentic Biryani?
+              {t('contact.cta.title')}
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Visit us today for dine-in or takeaway. Perfect for family gatherings, 
-              casual meals, or when you're craving authentic South Indian flavors.
+              {t('contact.cta.subtitle')}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a

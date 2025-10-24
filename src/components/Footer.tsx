@@ -1,7 +1,9 @@
 import { MapPin, Clock, Utensils } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-foreground text-background py-12">
@@ -10,44 +12,44 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold mb-4 font-display">
-              Classic Donne Biryani
+              {t('hero.title')}
             </h3>
             <p className="text-background/80 mb-4">
-              Experience the authentic taste of South India in the heart of Calangute, Goa.
+              {t('footer.tagline')}
             </p>
             <div className="flex items-center gap-2 text-primary">
               <Utensils className="w-5 h-5" />
-              <span className="font-medium">Authentic • Fresh • Delicious</span>
+              <span className="font-medium">{t('footer.tagline2')}</span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2 text-background/80">
               <li>
                 <a href="#about" className="hover:text-primary transition-colors">
-                  About Us
+                  {t('nav.about')}
                 </a>
               </li>
               <li>
                 <a href="#menu" className="hover:text-primary transition-colors">
-                  Our Menu
+                  {t('nav.menu')}
                 </a>
               </li>
               <li>
                 <a href="#gallery" className="hover:text-primary transition-colors">
-                  Gallery
+                  {t('nav.gallery')}
                 </a>
               </li>
               <li>
                 <a href="#testimonials" className="hover:text-primary transition-colors">
-                  Reviews
+                  {t('nav.reviews')}
                 </a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-primary transition-colors">
-                  Contact
+                  {t('nav.contact')}
                 </a>
               </li>
             </ul>
@@ -55,22 +57,22 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Visit Us</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.visitUs')}</h4>
             <div className="space-y-3 text-background/80">
               <div className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-background">Location</p>
-                  <p>Lavinia Street, Calangute</p>
-                  <p>Goa 403516, India</p>
+                  <p className="font-medium text-background">{t('contact.location')}</p>
+                  <p>{t('contact.address2')}</p>
+                  <p>{t('contact.address3')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-2">
                 <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-background">Hours</p>
-                  <p>8:00 AM - 11:00 PM</p>
-                  <p className="text-sm">Open All Week</p>
+                  <p className="font-medium text-background">{t('contact.hours')}</p>
+                  <p>{t('contact.hoursTime')}</p>
+                  <p className="text-sm">{t('contact.hoursOpen')}</p>
                 </div>
               </div>
             </div>
@@ -81,10 +83,10 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-background/80">
             <p className="text-sm">
-              © {currentYear} Classic Donne Biryani. All rights reserved.
+              © {currentYear} {t('footer.copyright')}
             </p>
             <p className="text-sm">
-              Made with ❤️ for authentic food lovers
+              {t('footer.madeWith')}
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import interior1 from "@/assets/restaurant-interior-1.jpg";
 import interior2 from "@/assets/restaurant-interior-2.jpg";
 import foodPlate1 from "@/assets/food-plate-1.jpg";
@@ -13,19 +14,20 @@ import biryaniCloseUp from "@/assets/biryani-close-up.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const { t } = useLanguage();
 
   const images = [
-    { src: interior1, alt: "Classic Donne Biryani Restaurant Interior", category: "Interior" },
-    { src: foodPlate1, alt: "Authentic Biryani Serving", category: "Food" },
-    { src: restaurantView1, alt: "Restaurant Exterior View", category: "Interior" },
-    { src: foodPlate2, alt: "Traditional Thali", category: "Food" },
-    { src: dosaPrep, alt: "Fresh Dosa Preparation", category: "Food" },
-    { src: interior2, alt: "Modern Dining Area", category: "Interior" },
-    { src: biryaniCloseUp, alt: "Biryani Close-up with Spices", category: "Food" },
-    { src: foodPlate3, alt: "Delicious Food Platter", category: "Food" },
-    { src: restaurantView2, alt: "Restaurant Ambiance", category: "Interior" },
-    { src: foodDisplay1, alt: "Food Display Counter", category: "Food" },
-    { src: foodDisplay2, alt: "Variety of Dishes", category: "Food" },
+    { src: interior1, alt: "Classic Donne Biryani Restaurant Interior", category: t('gallery.interior') },
+    { src: foodPlate1, alt: "Authentic Biryani Serving", category: t('gallery.food') },
+    { src: restaurantView1, alt: "Restaurant Exterior View", category: t('gallery.interior') },
+    { src: foodPlate2, alt: "Traditional Thali", category: t('gallery.food') },
+    { src: dosaPrep, alt: "Fresh Dosa Preparation", category: t('gallery.food') },
+    { src: interior2, alt: "Modern Dining Area", category: t('gallery.interior') },
+    { src: biryaniCloseUp, alt: "Biryani Close-up with Spices", category: t('gallery.food') },
+    { src: foodPlate3, alt: "Delicious Food Platter", category: t('gallery.food') },
+    { src: restaurantView2, alt: "Restaurant Ambiance", category: t('gallery.interior') },
+    { src: foodDisplay1, alt: "Food Display Counter", category: t('gallery.food') },
+    { src: foodDisplay2, alt: "Variety of Dishes", category: t('gallery.food') },
   ];
 
   return (
@@ -34,11 +36,10 @@ const Gallery = () => {
         <div className="container px-4">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Gallery
+              {t('gallery.title')}
             </h2>
             <p className="text-lg text-muted-foreground">
-              Take a visual journey through our restaurant - from our elegant dining spaces 
-              to our delicious, authentic dishes
+              {t('gallery.subtitle')}
             </p>
           </div>
 
