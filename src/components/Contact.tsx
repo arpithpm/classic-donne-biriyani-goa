@@ -47,10 +47,16 @@ const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold mb-2 text-card-foreground">Hours</h3>
-                  <div className="space-y-1 text-muted-foreground">
-                    <p>Monday - Sunday</p>
-                    <p className="font-medium text-card-foreground">Open Daily</p>
-                    <p className="text-sm">Dine-in & Takeaway Available</p>
+                  <div className="space-y-2 text-muted-foreground">
+                    <div>
+                      <p className="font-medium text-card-foreground">Monday - Sunday</p>
+                      <p className="text-sm">Open Daily</p>
+                    </div>
+                    <div className="pt-2 border-t border-border/50">
+                      <p className="text-sm"><span className="font-medium text-card-foreground">Lunch:</span> 12:00 PM - 3:30 PM</p>
+                      <p className="text-sm"><span className="font-medium text-card-foreground">Dinner:</span> 7:00 PM - 11:00 PM</p>
+                    </div>
+                    <p className="text-sm pt-1">Dine-in & Takeaway Available</p>
                   </div>
                 </div>
               </div>
