@@ -77,18 +77,22 @@ const Menu = () => {
         {/* Detailed Menu */}
         <div className="max-w-6xl mx-auto">
           <Tabs defaultValue="chicken" className="w-full">
-            <div className="mb-8 overflow-x-auto scrollbar-hide -mx-4 px-4">
-              <TabsList className="inline-flex w-auto min-w-full md:grid md:w-full md:grid-cols-5 bg-card p-1 gap-1">
-                {menuCategories.map((category) => (
-                  <TabsTrigger 
-                    key={category.id} 
-                    value={category.id}
-                    className="whitespace-nowrap px-6 py-2.5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-md transition-all"
-                  >
-                    {category.name}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
+            <div className="relative mb-8">
+              <div className="overflow-x-auto scrollbar-hide -mx-4 px-4 pb-2">
+                <TabsList className="inline-flex w-auto min-w-full md:grid md:w-full md:grid-cols-5 bg-card p-1 gap-1">
+                  {menuCategories.map((category) => (
+                    <TabsTrigger 
+                      key={category.id} 
+                      value={category.id}
+                      className="whitespace-nowrap px-6 py-2.5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-md transition-all"
+                    >
+                      {category.name}
+                    </TabsTrigger>
+                  ))}
+                </TabsList>
+              </div>
+              {/* Fade gradient to indicate scrollable content on mobile */}
+              <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-muted/30 to-transparent pointer-events-none md:hidden" />
             </div>
 
             {menuCategories.map((category) => (
