@@ -9,13 +9,18 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Only use basename for GitHub Pages, not in Lovable preview
+const basename = window.location.hostname.includes('github.io') 
+  ? '/classic-donne-biriyani-goa' 
+  : '';
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <LanguageProvider>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename="/classic-donne-biriyani-goa">
+        <BrowserRouter basename={basename}>
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
