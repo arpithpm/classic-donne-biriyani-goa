@@ -77,9 +77,27 @@ const Contact = () => {
                     081779 09828
                   </a>
                   <div className="mt-3 pt-3 border-t border-border/50">
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground mb-2">
                       📍 Dine-in • Kerbside Pickup • No-Contact Delivery
                     </p>
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      <a
+                        href="https://www.swiggy.com/city/central-goa/classic-donne-biryani-naika-waddo-calangute-bardez-nor-baga-calangute-rest931582"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 px-3 py-1.5 bg-orange-500 hover:bg-orange-600 text-white text-xs font-medium rounded transition-colors"
+                      >
+                        Swiggy
+                      </a>
+                      <a
+                        href="https://www.zomato.com/goa/classic-donne-biryani-calangute"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-medium rounded transition-colors"
+                      >
+                        Zomato
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -105,24 +123,56 @@ const Contact = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border border-primary/10 max-w-4xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-            Ready to Experience Authentic Biryani?
-          </h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Visit us today for dine-in or takeaway. Perfect for family gatherings, 
-            casual meals, or when you're craving authentic South Indian flavors.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href="https://maps.app.goo.gl/Bew47FuCXNWeYANp6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors shadow-lg"
-            >
-              <MapPin className="w-5 h-5" />
-              Get Directions
-            </a>
+        <div className="mt-16 space-y-8">
+          {/* Online Ordering Section */}
+          <div className="text-center bg-gradient-to-br from-orange-500/10 to-red-600/10 rounded-2xl p-8 md:p-12 border border-orange-500/20 max-w-4xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
+              Order Online for Delivery
+            </h3>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Craving our delicious biryani? Order now on Swiggy or Zomato and enjoy 
+              authentic South Indian flavors delivered right to your doorstep!
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="https://www.swiggy.com/city/central-goa/classic-donne-biryani-naika-waddo-calangute-bardez-nor-baga-calangute-rest931582"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors shadow-lg text-lg"
+              >
+                🛵 Order on Swiggy
+              </a>
+              <a
+                href="https://www.zomato.com/goa/classic-donne-biryani-calangute"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors shadow-lg text-lg"
+              >
+                🍽️ Order on Zomato
+              </a>
+            </div>
+          </div>
+
+          {/* Visit Us Section */}
+          <div className="text-center bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border border-primary/10 max-w-4xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
+              Ready to Experience Authentic Biryani?
+            </h3>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Visit us today for dine-in or takeaway. Perfect for family gatherings, 
+              casual meals, or when you're craving authentic South Indian flavors.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="https://maps.app.goo.gl/Bew47FuCXNWeYANp6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors shadow-lg"
+              >
+                <MapPin className="w-5 h-5" />
+                Get Directions
+              </a>
+            </div>
           </div>
         </div>
       </div>

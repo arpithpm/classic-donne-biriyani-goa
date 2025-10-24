@@ -59,8 +59,28 @@ const Hero = () => {
               className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 font-semibold px-8"
               onClick={() => scrollToSection('contact')}
             >
-              Visit Us
+              {t('nav.visitUs')}
             </Button>
+          </div>
+
+          {/* Online Ordering */}
+          <div className="mb-12 flex flex-wrap gap-4">
+            <a
+              href="https://www.swiggy.com/city/central-goa/classic-donne-biryani-naika-waddo-calangute-bardez-nor-baga-calangute-rest931582"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition-colors shadow-lg"
+            >
+              🛵 Order on Swiggy
+            </a>
+            <a
+              href="https://www.zomato.com/goa/classic-donne-biryani-calangute"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors shadow-lg"
+            >
+              🍽️ Order on Zomato
+            </a>
           </div>
 
           {/* Quick Info */}
