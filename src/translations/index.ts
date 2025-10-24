@@ -110,6 +110,10 @@ export const translations = {
     'contact.contact': 'Contact',
     'contact.contactText': 'For reservations and inquiries:',
     'contact.services': '📍 Dine-in • Kerbside Pickup • No-Contact Delivery',
+    'contact.orderOnline.title': 'Order Online for Delivery',
+    'contact.orderOnline.subtitle': 'Craving our delicious biryani? Order now on Swiggy or Zomato and enjoy authentic South Indian flavors delivered right to your doorstep!',
+    'contact.orderOnline.swiggy': 'Order on Swiggy',
+    'contact.orderOnline.zomato': 'Order on Zomato',
     'contact.cta.title': 'Ready to Experience Authentic Biryani?',
     'contact.cta.subtitle': 'Visit us today for dine-in or takeaway. Perfect for family gatherings, casual meals, or when you\'re craving authentic South Indian flavors.',
     
@@ -232,6 +236,10 @@ export const translations = {
     'contact.contact': 'ಸಂಪರ್ಕ',
     'contact.contactText': 'ಕಾಯ್ದಿರಿಸುವಿಕೆ ಮತ್ತು ವಿಚಾರಣೆಗಳಿಗಾಗಿ:',
     'contact.services': '📍 ಡೈನ್-ಇನ್ • ಕರ್ಬ್‌ಸೈಡ್ ಪಿಕಪ್ • ನೋ-ಕಾಂಟ್ಯಾಕ್ಟ್ ಡೆಲಿವರಿ',
+    'contact.orderOnline.title': 'ಆನ್‌ಲೈನ್ ಆರ್ಡರ್ ಮಾಡಿ ಡೆಲಿವರಿಗಾಗಿ',
+    'contact.orderOnline.subtitle': 'ನಮ್ಮ ರುಚಿಕರ ಬಿರಿಯಾನಿಯನ್ನು ಬಯಸುತ್ತೀರಾ? ಈಗ Swiggy ಅಥವಾ Zomato ನಲ್ಲಿ ಆರ್ಡರ್ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ಮನೆ ಬಾಗಿಲಿಗೆ ತಲುಪಿಸುವ ಅಧಿಕೃತ ದಕ್ಷಿಣ ಭಾರತೀಯ ರುಚಿಗಳನ್ನು ಅನುಭವಿಸಿ!',
+    'contact.orderOnline.swiggy': 'Swiggy ನಲ್ಲಿ ಆರ್ಡರ್ ಮಾಡಿ',
+    'contact.orderOnline.zomato': 'Zomato ನಲ್ಲಿ ಆರ್ಡರ್ ಮಾಡಿ',
     'contact.cta.title': 'ಅಧಿಕೃತ ಬಿರಿಯಾನಿ ಅನುಭವಿಸಲು ಸಿದ್ಧರಿದ್ದೀರಾ?',
     'contact.cta.subtitle': 'ಡೈನ್-ಇನ್ ಅಥವಾ ಟೇಕ್‌ಅವೇಗಾಗಿ ಇಂದು ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ. ಕುಟುಂಬ ಸಮಾವೇಶಗಳು, ಸಾಂದರ್ಭಿಕ ಊಟಗಳು ಅಥವಾ ನೀವು ಅಧಿಕೃತ ದಕ್ಷಿಣ ಭಾರತೀಯ ರುಚಿಗಳನ್ನು ಬಯಸಿದಾಗ ಪರಿಪೂರ್ಣ.',
     

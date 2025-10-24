@@ -129,11 +129,10 @@ const Contact = () => {
           {/* Online Ordering Section */}
           <div className="text-center bg-gradient-to-br from-orange-500/10 to-red-600/10 rounded-2xl p-8 md:p-12 border border-orange-500/20 max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-              Order Online for Delivery
+              {t('contact.orderOnline.title')}
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Craving our delicious biryani? Order now on Swiggy or Zomato and enjoy 
-              authentic South Indian flavors delivered right to your doorstep!
+              {t('contact.orderOnline.subtitle')}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
@@ -142,7 +141,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors shadow-lg text-lg"
               >
-                🛵 Order on Swiggy
+                🛵 {t('contact.orderOnline.swiggy')}
               </a>
               <a
                 href="https://www.zomato.com/goa/classic-donne-biryani-calangute"
@@ -150,7 +149,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors shadow-lg text-lg"
               >
-                🍽️ Order on Zomato
+                🍽️ {t('contact.orderOnline.zomato')}
               </a>
             </div>
           </div>
