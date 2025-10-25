@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const WhatsAppWidget = () => {
   const { t } = useLanguage();
   const phoneNumber = "919900090908"; // Format: country code + number without + or spaces
-  const message = encodeURIComponent("Hi! I'd like to know more about Classic Donne Biryani.");
+  const message = encodeURIComponent("Hi! I'm contacting you through your website. I'd like to know more about Classic Donne Biryani.");
 
   const handleClick = () => {
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
