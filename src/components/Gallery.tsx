@@ -54,6 +54,8 @@ const Gallery = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -82,6 +84,8 @@ const Gallery = () => {
             <img
               src={selectedImage}
               alt="Gallery view"
+              loading="eager"
+              decoding="async"
               className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
             />
             <button

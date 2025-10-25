@@ -147,6 +147,8 @@ const Menu = () => {
                           <img 
                             src={menuImages[item.name]} 
                             alt={item.name}
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
